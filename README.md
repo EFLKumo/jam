@@ -4,8 +4,14 @@
 
 🍯 A [scoop](https://scoop.sh) bucket made by EFL.
 
+Install `jam` by:
 ```pwsh
 scoop bucket add jam https://github.com/EFLKumo/jam
+```
+
+List apps:
+```pwsh
+scoop search | Where-Object { $_.Source -eq "jam" }
 ```
 
 ## How do I contribute new manifests?
