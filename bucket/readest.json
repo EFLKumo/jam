@@ -22,6 +22,7 @@
             "Readest"
         ]
     ],
+    "persist": "com.bilingify.readest",
     "post_install": [
         "$appDataPath = \"$env:APPDATA\\com.bilingify.readest\"",
         "$persistPath = \"$persist_dir\\com.bilingify.readest\"",
