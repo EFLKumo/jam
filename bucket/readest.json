@@ -31,7 +31,7 @@
         "if (-Not (Test-Path $persistPath)) {",
         "    New-Item -Path \"$persistPath\" -ItemType Directory",
         "}",
-        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\""
+        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\" | Out-Null"
     ],
     "post_uninstall": [
         "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.bilingify.readest\"",
