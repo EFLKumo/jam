@@ -2,7 +2,9 @@
 
 [![Tests](https://github.com/EFLKumo/jam/actions/workflows/ci.yml/badge.svg)](https://github.com/EFLKumo/jam/actions/workflows/ci.yml) [![Excavator](https://github.com/EFLKumo/jam/actions/workflows/excavator.yml/badge.svg)](https://github.com/EFLKumo/jam/actions/workflows/excavator.yml)
 
-🍯 A [scoop](https://scoop.sh) bucket made by EFL.
+🍯 `jam` is a [scoop](https://scoop.sh) bucket that emphasizes reliability and cleanliness.
+
+I always believe that `scoop` is not just a package manager, but also has the goal of achieving clean, tidy, and well-structured app management on the Windows platform. This bucket contains applications that are not included in the official bucket, or are included but are unreliable in certain aspects. All manifests in this bucket are written or reviewed carefully, ensuring **portability** of applications (using scoop's `persist` feature) and **reliability**.
 
 Install `jam` by:
 ```pwsh
