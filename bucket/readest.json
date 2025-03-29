@@ -26,18 +26,18 @@
         "$appDataPath = \"$env:APPDATA\\com.bilingify.readest\"",
         "$persistPath = \"$persist_dir\\com.bilingify.readest\"",
         "if (Test-Path $appDataPath) {",
-        "    if (-Not (Test-Path $persistPath)) {",
-        "        New-Item -Path \"$persistPath\" -ItemType Directory -Force | Out-Null",
-        "    } else {",
-        "        Get-ChildItem -Path \"$persistPath\" -Recurse | Remove-Item -Force -Recurse",
-        "    }",
-        "    Copy-Item -Path \"$appDataPath\\*\" -Destination \"$persistPath\" -Recurse -Force",
-        "    Remove-Item -Path \"$appDataPath\" -Recurse -Force",
+        "    Remove-Item $appDataPath -Recurse -Force",
         "}",
         "if (-Not (Test-Path $persistPath)) {",
-        "    New-Item -Path \"$persistPath\" -ItemType Directory -Force | Out-Null",
+        "    New-Item -Path \"$persistPath\" -ItemType Directory",
         "}",
-        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\" -Force | Out-Null"
+        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\""
+    ],
+    "post_uninstall": [
+        "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.bilingify.readest\"",
+        "if (Test-Path $appLocalDataPath -PathType Container) {",
+        "    Remove-Item -Recurse -Force $appLocalDataPath",
+        "}"
     ],
     "checkver": {
         "github": "https://github.com/readest/readest"
