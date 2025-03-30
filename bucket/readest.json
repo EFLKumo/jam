@@ -30,7 +30,7 @@
         "    Remove-Item $appDataPath -Recurse -Force",
         "}",
         "if (-Not (Test-Path $persistPath)) {",
-        "    New-Item -Path \"$persistPath\" -ItemType Directory",
+        "    New-Item -Path \"$persistPath\" -ItemType Directory | Out-Null",
         "}",
         "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\" | Out-Null"
     ],
