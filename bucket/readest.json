@@ -8,21 +8,23 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/readest/readest/releases/download/v0.9.29/Readest_0.9.29_x64-portable.exe#/Readest.exe",
-            "hash": "4f4fc158cb5c7959f4d4dcc0744e17cfa5a1035e07e16768e56b40dc64c491b9"
+            "url": "https://github.com/readest/readest/releases/download/v0.9.29/Readest_0.9.29_x64-setup.exe#/dl.7z",
+            "hash": "FD2978CBA6FD693A119573E043B697DB83EC48ED4100A4F2C9703ADC5A4E8995"
         },
         "arm64": {
-            "url": "https://github.com/readest/readest/releases/download/v0.9.29/Readest_0.9.29_arm64-portable.exe#/Readest.exe",
-            "hash": "b8b65a2820d4f34630fabc565a05fe7f9a76567d9448e36b7be65e33131d0069"
+            "url": "https://github.com/readest/readest/releases/download/v0.9.29/Readest_0.9.29_arm64-setup.exe#/dl.7z",
+            "hash": "AB2EF3E9AA5D0D0CDB6357C7489C38D5B0E5640A74D0A4934901431A10E06950"
         }
     },
     "shortcuts": [
         [
-            "Readest.exe",
+            "readest.exe",
             "Readest"
         ]
     ],
     "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Rename-Item -Path \"$dir\\`$TEMP\" -NewName \"redist\"",
         "$appDataPath = \"$env:APPDATA\\com.bilingify.readest\"",
         "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.bilingify.readest\"",
         "$persistLocal = \"$persist_dir\\Local\"",
@@ -64,5 +66,9 @@
                 "url": "https://github.com/readest/readest/releases/download/v$version/Readest_$version_arm64-portable.exe#/Readest.exe"
             }
         }
-    }
+    },
+    "notes": [
+        "You may need to install Edge WebView2 Runtime to use Readest.",
+        "A installer of Edge WebView2 Runtime is available under the 'redist' folder of the Pot installation directory."
+    ]
 }

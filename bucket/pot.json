@@ -19,6 +19,7 @@
     },
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Rename-Item -Path \"$dir\\`$TEMP\" -NewName \"redist\"",
         "$appDataPath = \"$env:APPDATA\\com.pot-app.desktop\"",
         "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.pot-app.desktop\"",
         "$persistLocal = \"$persist_dir\\Local\"",
