@@ -20,14 +20,19 @@
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
         "$appDataPath = \"$env:APPDATA\\com.pot-app.desktop\"",
-        "$persistPath = \"$persist_dir\\com.pot-app.desktop\"",
+        "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.pot-app.desktop\"",
+        "$persistPath = \"$persist_dir\"",
         "if (Test-Path $appDataPath) {",
         "    Remove-Item $appDataPath -Recurse -Force",
+        "}",
+        "if (Test-Path $appLocalDataPath) {",
+        "    Remove-Item $appLocalDataPath -Recurse -Force",
         "}",
         "if (-Not (Test-Path $persistPath)) {",
         "    New-Item -Path \"$persistPath\" -ItemType Directory | Out-Null",
         "}",
-        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\" | Out-Null"
+        "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\\Roaming\" | Out-Null",
+        "New-Item -ItemType Junction -Path \"$appLocalDataPath\" -Target \"$persistPath\\Local\" | Out-Null"
     ],
     "shortcuts": [
         [
@@ -35,11 +40,14 @@
             "Pot"
         ]
     ],
-    "persist": "com.pot-app.desktop",
     "post_uninstall": [
+        "$appDataPath = \"$env:APPDATA\\com.pot-app.desktop\"",
         "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.pot-app.desktop\"",
-        "if (Test-Path $appLocalDataPath -PathType Container) {",
-        "    Remove-Item -Recurse -Force $appLocalDataPath",
+        "if (Test-Path $appDataPath) {",
+        "    Remove-Item $appDataPath -Recurse -Force",
+        "}",
+        "if (Test-Path $appLocalDataPath) {",
+        "    Remove-Item $appLocalDataPath -Recurse -Force",
         "}"
     ],
     "checkver": {
