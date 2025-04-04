@@ -56,5 +56,6 @@
             "url": "$baseurl/latest.yml",
             "regex": "$basename\\s+sha512:\\s$base64"
         }
-    }
+    },
+    "notes": "You are suggested to disable \"Automatically download upates\" in Signal->Settings->General and use scoop to manage updates."
 }
