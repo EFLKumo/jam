@@ -47,9 +47,6 @@
         "}",
         "if (Test-Path $appDataPath) {",
         "    Remove-Item $appDataPath -Recurse -Force",
-        "}",
-        "if (Test-Path \"$env:USERPROFILE\\SiYuan\") {",
-        "    Remove-Item \"$env:USERPROFILE\\SiYuan\" -Recurse -Force",
         "}"
     ],
     "checkver": {
