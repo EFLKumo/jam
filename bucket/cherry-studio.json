@@ -42,7 +42,6 @@
             "Cherry Studio"
         ]
     ],
-    "persist": "CherryStudio",
     "uninstaller": {
         "script": [
             "if (Test-Path \"$env:LOCALAPPDATA\\cherrystudio-updater\" -PathType Container) {",
