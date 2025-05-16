@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/appdev/siyuan-unlock/releases/download/v3.1.29/siyuan-unlock-v3.1.29-win.exe#/dl.7z",
-            "hash": "1b44f8fa358f92380fcc598209293e0e35ea72d786e7deafc3538c3a79ad324c",
+            "hash": "18d55172e83d01b8eedbe72bbef7f692c35dbdf5569e93ff8877b0f80044bc82",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
