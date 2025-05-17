@@ -3,6 +3,10 @@
     "description": "The configuration for MPV player",
     "homepage": "https://github.com/dyphire/mpv-config",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "suggest": {
+        "ffmpeg": "ffmpeg",
+        "yt-dlp": "yt-dlp"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-2025.05.15/mpv_config-2025.05.15.7z",
