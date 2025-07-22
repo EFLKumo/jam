@@ -23,7 +23,8 @@
     ],
     "persist": "portable_config",
     "checkver": {
-        "github": "https://github.com/dyphire/mpv-config"
+        "github": "https://github.com/dyphire/mpv-config",
+        "regex": "(?:v|mpv_config-)?([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
