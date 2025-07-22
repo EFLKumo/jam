@@ -1,5 +1,5 @@
 {
-    "version": "mpv_config-2025.05.15",
+    "version": "2025.07.12",
     "description": "The configuration for MPV player",
     "homepage": "https://github.com/dyphire/mpv-config",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -9,9 +9,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-2025.05.15/mpv_config-2025.05.15.7z",
-            "hash": "sha1:DA4D4831D650B6082E864D48AAF8D631408A53F0",
-            "extract_dir": "mpv_config-2025.05.15"
+            "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-2025.07.12/mpv_config-2025.07.12.7z",
+            "hash": "1f92661d08dc72112a108682cca594a77e4f32813351389d4e4b038ff8d99435",
+            "extract_dir": "2025.07.12"
         }
     },
     "env_add_path": ".",
