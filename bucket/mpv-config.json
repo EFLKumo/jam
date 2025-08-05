@@ -11,7 +11,7 @@
         "64bit": {
             "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-2025.07.12/mpv_config-2025.07.12.7z",
             "hash": "1f92661d08dc72112a108682cca594a77e4f32813351389d4e4b038ff8d99435",
-            "extract_dir": "2025.07.12"
+            "extract_dir": "mpv_config-2025.07.12"
         }
     },
     "env_add_path": ".",
@@ -30,7 +30,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-$version/mpv_config-$version.7z",
-                "extract_dir": "$version"
+                "extract_dir": "mpv_config-$version"
             }
         }
     }
