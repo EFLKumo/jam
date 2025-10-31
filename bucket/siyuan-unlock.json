@@ -1,12 +1,12 @@
 {
-    "version": "3.3.5",
+    "version": "3.3.6",
     "description": "SiYuan is a privacy-first, self-hosted, fully open source personal knowledge management software, supports fine-grained block-level reference, and Markdown WYSIWYG.",
     "homepage": "https://b3log.org/siyuan",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/appdev/siyuan-unlock/releases/download/v3.3.5/siyuan-unlock-v3.3.5-win.exe#/dl.7z",
-            "hash": "6f23fd9783082feb833028b59dd87cd47818b28042a6f478bbbdbe5d8e87af12",
+            "url": "https://github.com/appdev/siyuan-unlock/releases/download/v3.3.6/siyuan-unlock-v3.3.6-win.exe#/dl.7z",
+            "hash": "d49a7860f76888d8dce3d3a813c7adef5ee5f5127a271797517771f137f0427b",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
