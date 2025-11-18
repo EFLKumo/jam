@@ -1,5 +1,5 @@
 {
-    "version": "0.9.88",
+    "version": "0.9.92",
     "description": "An open-source ebook reader designed for immersive and deep reading experiences",
     "homepage": "https://readest.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/readest/readest/releases/download/v0.9.88/Readest_0.9.88_x64-setup.exe#/dl.7z",
-            "hash": "1be247a513e51c2e69acc1aa78f9226daacf47f85e9a37f5b617f9e30e9b5a73"
+            "url": "https://github.com/readest/readest/releases/download/v0.9.92/Readest_0.9.92_x64-setup.exe#/dl.7z",
+            "hash": "a5f67d514596055e3d6084119c107ed80805ee64b6f15a9235b7d042e8280fbf"
         },
         "arm64": {
-            "url": "https://github.com/readest/readest/releases/download/v0.9.88/Readest_0.9.88_arm64-setup.exe#/dl.7z",
-            "hash": "4b34cb93d4e35a7366944b188166fe91766eb1ef02c6b32d96052b28227c8c97"
+            "url": "https://github.com/readest/readest/releases/download/v0.9.92/Readest_0.9.92_arm64-setup.exe#/dl.7z",
+            "hash": "256584ac448d08d45561f9eb5ca98f9d370a0782466878868da236647fa5ac8d"
         }
     },
     "shortcuts": [
