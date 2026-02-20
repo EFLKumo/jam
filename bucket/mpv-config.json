@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/dyphire/mpv-config/releases/download/mpv_config-2026.02.20/mpv_config-2026.02.20.7z",
-            "hash": "1b8b5ac84f28bec845dfa72ec556eed641fc41a906bef07dfa036eb972f1616c",
+            "hash": "6b597281aa52c15c1293b6364544aeb8661e93781446eaa3f64920805fb737f1",
             "extract_dir": "mpv_config-2026.02.20"
         }
     },
