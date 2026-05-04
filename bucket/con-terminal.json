@@ -25,6 +25,10 @@
         [
             "con-app.exe",
             "con-app"
+        ],
+        [
+            "con-cli.exe",
+            "con-cil"
         ]
     ],
     "shortcuts": [
