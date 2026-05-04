@@ -22,14 +22,8 @@
         "New-Item -ItemType Junction -Path \"$appDataPath\" -Target \"$persistPath\" | Out-Null"
     ],
     "bin": [
-        [
-            "con-app.exe",
-            "con-app"
-        ],
-        [
-            "con-cli.exe",
-            "con-cil"
-        ]
+        "con-app.exe",
+        "con-cli.exe"
     ],
     "shortcuts": [
         [
