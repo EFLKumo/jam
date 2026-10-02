@@ -86,16 +86,6 @@
         "    New-Item -ItemType Junction -Path $appDataPath -Target $persistRoaming -ErrorAction Stop | Out-Null",
         "}"
     ],
-    "post_uninstall": [
-        "$appConfigPath = \"$env:USERPROFILE\\.config\\siyuan\"",
-        "$appDataPath = \"$env:APPDATA\\SiYuan-Electron\"",
-        "if (Test-Path $appConfigPath) {",
-        "    Remove-Item $appConfigPath -Recurse -Force",
-        "}",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/appdev/siyuan-unlock"
     },

@@ -91,16 +91,6 @@
         "    New-Item -ItemType Junction -Path $appLocalDataPath -Target $persistLocal -ErrorAction Stop | Out-Null",
         "}"
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\com.bilingify.readest\"",
-        "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.bilingify.readest\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}",
-        "if (Test-Path $appLocalDataPath) {",
-        "    Remove-Item $appLocalDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/readest/readest"
     },

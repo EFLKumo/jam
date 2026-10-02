@@ -61,12 +61,6 @@
             "Con"
         ]
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\con-terminal\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "url": "https://github.com/nowledge-co/con-terminal/releases/latest",
         "re": "/tag/v?([\\d\\w.-]+)"

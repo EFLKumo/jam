@@ -94,16 +94,6 @@
             "Zed"
         ]
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\Zed\"",
-        "$appLocalDataPath = \"$env:LOCALAPPDATA\\Zed\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}",
-        "if (Test-Path $appLocalDataPath) {",
-        "    Remove-Item $appLocalDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/zed-industries/zed"
     },

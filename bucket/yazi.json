@@ -60,12 +60,6 @@
         "ya.exe",
         "yazi.exe"
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\con-terminal\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/sxyazi/yazi"
     },

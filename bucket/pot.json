@@ -92,16 +92,6 @@
             "Pot"
         ]
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\com.pot-app.desktop\"",
-        "$appLocalDataPath = \"$env:LOCALAPPDATA\\com.pot-app.desktop\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}",
-        "if (Test-Path $appLocalDataPath) {",
-        "    Remove-Item $appLocalDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": {
         "github": "https://github.com/pot-app/pot-desktop"
     },

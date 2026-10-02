@@ -57,12 +57,6 @@
             "Tolaria"
         ]
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\com.tolaria.app\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}"
-    ],
     "uninstaller": {
         "script": [
             "if (Test-Path \"$env:LOCALAPPDATA\\club.refactoring.tolaria\" -PathType Container) {",

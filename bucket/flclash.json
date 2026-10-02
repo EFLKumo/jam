@@ -89,12 +89,6 @@
             "FlClash"
         ]
     ],
-    "post_uninstall": [
-        "$appDataPath = \"$env:APPDATA\\com.follow\\clash\"",
-        "if (Test-Path $appDataPath) {",
-        "    Remove-Item $appDataPath -Recurse -Force",
-        "}"
-    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
