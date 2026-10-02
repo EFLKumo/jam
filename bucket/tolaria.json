@@ -18,6 +18,7 @@
         "if (-not ($isJunction -and ($appData.Target -eq $persistPath -or $appData.Target -contains $persistPath))) {",
         "    $persistHasData = (Test-Path -LiteralPath $persistPath) -and (Get-ChildItem -LiteralPath $persistPath -Force -ErrorAction SilentlyContinue | Select-Object -First 1)",
         "    if (-not $persistHasData) {",
+        "        New-Item -ItemType Directory -Path (Split-Path -Path $persistPath -Parent) -Force | Out-Null",
         "        Remove-Item -LiteralPath $persistPath -Force -Recurse -ErrorAction SilentlyContinue",
         "        if ($appData -and -not $isJunction) {",
         "            Move-Item -LiteralPath $appDataPath -Destination $persistPath -Force",
